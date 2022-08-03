@@ -1,31 +1,31 @@
-let CounterA = 0;
-let CounterB = 0;
-let CounterC = 0;
+let count1 = 0;
+let count2 = 0;
+let count3 = 0;
 
-const amount_1 = document.querySelector("#countbox-1");
-const amount_2 = document.querySelector("#countbox-2");
-const amount_3 = document.querySelector("#countbox-3");
+const amountbutton1 = document.querySelector("#count-button1");
+const amountbutton2 = document.querySelector("#count-button2");
+const amountbutton3 = document.querySelector("#count-button3");
 
-function AddNumber1() {
-  amount_1.textContent = "count is " + CounterA;
+function increaseCount1() {
+  amountbutton1.textContent = "count is " + count1;
 }
-function AddNumber2() {
-  amount_2.textContent = "count is " + CounterB;
+function increaseCount2() {
+  amountbutton2.textContent = "count is " + count2;
 }
-function AddNumber3() {
-  amount_3.textContent = "count is " + CounterC;
+function increaseCount3() {
+  amountbutton3.textContent = "count is " + count3;
 }
 
-amount_1.onclick = function () {
-  CounterA++;
-  AddNumber1();
+amountbutton1.onclick = function () {
+  count1++;
+  increaseCount1();
 };
-amount_2.onclick = function () {
-  CounterB++;
-  AddNumber2();
+amountbutton2.onclick = function () {
+  count2++;
+  increaseCount2();
 };
 
-amount_3.onclick = function () {
-  CounterC++;
-  AddNumber3();
+amountbutton3.onclick = function () {
+  count3++;
+  increaseCount3();
 };
