@@ -1,14 +1,10 @@
-const COUNT = 5;
-
-let countButtons = [];
 let values = [];
+const countButtons = document.querySelectorAll(".count-button");
 
-for (let i = 0; i < COUNT; i++) {
+for (let i = 0; i < countButtons.length; i++) {
   values.push(0);
-  const button = document.querySelector("#count-button-" + (i + 1));
-  button.onclick = function () {
-    button.textContent = `count is ${++values[i]}`;
-  };
 
-  countButtons.push(button);
+  countButtons[i].onclick = function () {
+    countButtons[i].textContent = `count is ${++values[i]}`;
+  };
 }
